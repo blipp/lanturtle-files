@@ -45,7 +45,7 @@ function delete_modules {
 }
 
 function update_modules {
-    BASE_URL='http://lanturtle.com/modules'
+    BASE_URL='https://lanturtle.com/modules'
     dialog --yesno "Are you sure you want to connect to LANTurtle.com and update all installed modules?" 6 60
     response=$?
     case $response in
@@ -70,7 +70,7 @@ dialog --yesno "Are you sure you want to connect to LANTurtle.com?" 6 60
 response=$?
 case $response in
     0)
-    BASE_URL='http://lanturtle.com/modules'
+    BASE_URL='https://lanturtle.com/modules'
     wget -q $BASE_URL/module_list -O /tmp/module_list
 
     pkglist=""
