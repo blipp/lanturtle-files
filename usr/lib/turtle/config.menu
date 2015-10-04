@@ -80,7 +80,7 @@ network_ip_popup() {
         network_ip_popup
     ;;
     "Back")
-        exit
+        config_menu
     ;;
   esac
 }
