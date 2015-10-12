@@ -31,7 +31,9 @@ function delete_modules {
             0) 
             for choice in $choices
             do
-                rm /etc/turtle/modules/$choice
+                [[ "$choice" == "modulemanager" ]] || {
+                    rm /etc/turtle/modules/$choice
+                }
             done
             dialog --title "Notice" --msgbox "Modules deleted." 5 60
             configure
