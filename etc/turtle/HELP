@@ -17,10 +17,10 @@ CONFIG
 
  It is highly recommended to use the update feature, 
  especially with a new LAN Turtle as new features, bug
- fixes, additional modules and other improcements are 
+ fixes, additional modules and other improvements are 
  constantly being made.
 
- You may also disable the turtle shell, which will 
+ You may also disable the Turtle Shell, which will 
  prevent the interactive menu from starting upon SSH
  connection.
 
