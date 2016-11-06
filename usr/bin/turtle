@@ -14,6 +14,10 @@ TURTLE_ASCII="          .-./*)            (*\.-.\n        _/___\/  LAN TURTLE  \
 while [ -f /etc/turtle/set_pass ]
 do
     change_password_gui
+    # if the exit code was 1, then there was a problem with the script
+    [[ $? == 1 ]] && {
+        exit 1
+    }
 done
 
 
